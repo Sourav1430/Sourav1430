@@ -1,5 +1,5 @@
-try:
-    import pyautogui
-    print("pyautogui is installed.")
-except ImportError:
-    print("pyautogui is not installed.")
+import pandas as pd 
+
+df = pd.read_excel('Book1.xlsx')
+
+print(df)
