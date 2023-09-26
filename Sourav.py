@@ -1,5 +1,6 @@
 import pandas as pd 
 
-df = pd.read_excel('Book1.xlsx')
+file = 'Book1.xlsx'
 
+df = pd.read_excel(file, index_col=False)
 print(df)
