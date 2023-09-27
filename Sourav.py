@@ -1,6 +1,6 @@
-import pandas as pd 
+import openpyxl
+from openpyxl.styles import PatternFill
 
 file = 'Book1.xlsx'
-
-df = pd.read_excel(file, index_col=None)
-print(df)
+wb = openpyxl.load_workbook(file)
+ws = wb.active
